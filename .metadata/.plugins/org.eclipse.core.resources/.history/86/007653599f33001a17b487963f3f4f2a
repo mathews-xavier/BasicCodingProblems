@@ -1,0 +1,16 @@
+package palindromeString;
+
+public class Palindrome {
+
+	public static boolean isPalindrome(String input)
+	{
+		if(input==null||input.isEmpty())
+		{
+			return false;
+		}
+		
+		char[] arr = input.toCharArray(); 
+		StringBuilder sb=new StringBuilder(input.length());
+		return true;
+	}
+}
