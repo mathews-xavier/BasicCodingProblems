@@ -418,3 +418,94 @@ Binding(CTRL+SHIFT+T,
 !MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "src [in BasicCodingExcercise]
   <default> (not open)
   palindromeString (not open)".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-10 23:10:00.296
+!MESSAGE Creating lock file /home/mathews/Work space/eclipse-work-space/.git/index.lock failed
+!STACK 0
+java.nio.file.AccessDeniedException: /home/mathews/Work space/eclipse-work-space/.git/index.lock
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:215)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.createFile(Files.java:647)
+	at org.eclipse.jgit.util.FS_POSIX.createNewFileAtomic(FS_POSIX.java:431)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:603)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:322)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:288)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1292)
+	at org.eclipse.egit.core.RepositoryHandle.lockDirCache(RepositoryHandle.java:318)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:155)
+	at org.eclipse.egit.ui.internal.actions.CommitActionHandler$3.run(CommitActionHandler.java:216)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-01-10 23:10:00.301
+!MESSAGE An internal error occurred during: "Adding Files to Index".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of add command
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:258)
+	at org.eclipse.egit.ui.internal.actions.CommitActionHandler$3.run(CommitActionHandler.java:216)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /home/mathews/Work space/eclipse-work-space/.git/index.lock
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:215)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.createFile(Files.java:647)
+	at org.eclipse.jgit.util.FS_POSIX.createNewFileAtomic(FS_POSIX.java:431)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:603)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:322)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:288)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1292)
+	at org.eclipse.egit.core.RepositoryHandle.lockDirCache(RepositoryHandle.java:318)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:155)
+	... 2 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-10 23:10:18.944
+!MESSAGE Creating lock file /home/mathews/Work space/eclipse-work-space/.git/index.lock failed
+!STACK 0
+java.nio.file.AccessDeniedException: /home/mathews/Work space/eclipse-work-space/.git/index.lock
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:215)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.createFile(Files.java:647)
+	at org.eclipse.jgit.util.FS_POSIX.createNewFileAtomic(FS_POSIX.java:431)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:603)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:322)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:288)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1292)
+	at org.eclipse.egit.core.RepositoryHandle.lockDirCache(RepositoryHandle.java:318)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:155)
+	at org.eclipse.egit.ui.internal.staging.StagingView$52.run(StagingView.java:3406)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-01-10 23:10:18.945
+!MESSAGE /home/mathews/Work space/eclipse-work-space/.git/index.lock
+!STACK 0
+java.nio.file.AccessDeniedException: /home/mathews/Work space/eclipse-work-space/.git/index.lock
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:215)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.createFile(Files.java:647)
+	at org.eclipse.jgit.util.FS_POSIX.createNewFileAtomic(FS_POSIX.java:431)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:603)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:322)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:288)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1292)
+	at org.eclipse.egit.core.RepositoryHandle.lockDirCache(RepositoryHandle.java:318)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:155)
+	at org.eclipse.egit.ui.internal.staging.StagingView$52.run(StagingView.java:3406)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

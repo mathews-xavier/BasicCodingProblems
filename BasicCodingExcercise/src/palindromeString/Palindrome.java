@@ -23,5 +23,6 @@ public class Palindrome {
 	{
 		System.out.println(Palindrome.isPalindrome("malayalam"));
 		System.out.println(Palindrome.isPalindrome("mathew"));
+		System.out.println(Palindrome.isPalindrome("deepa"));
 	}
 }
